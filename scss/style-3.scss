@@ -1,0 +1,83 @@
+/*
+ * Author by FreeHTML5.co
+ * Twitter: https://twitter.com/fh5co
+ * Facebook: https://fb.com/fh5co
+ * URL: https://freehtml5.co
+ */
+
+/* Fonts */
+@font-face {
+	font-family: 'Calisto-MT';
+	src: url(../fonts/Calisto-MT.ttf); 
+}
+
+@font-face {
+	font-family: 'Calisto-MT-Italic';
+	src: url(../fonts/Calisto-MT-Italic.ttf); 
+}
+
+@font-face {
+	font-family: 'Calisto-MT-Bold';
+	src: url(../fonts/Calisto-MT-Bold.ttf); 
+}
+
+$Calisto-MT: 'Calisto-MT';
+$Calisto-MT-Italic: 'Calisto-MT-Italic';
+$Calisto-MT-Bold: 'Calisto-MT-Bold';
+
+
+/* Colors */
+$brand-primary: #aa62e5;
+$brand-secondary: #777;
+
+$brand-white: #fff;
+$brand-black: #222;
+$brand-gray: #343434;
+$brand-darkgray: #282828;
+
+
+/* Universal style */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: $Calisto-MT;
+}
+
+.site-container {
+	width: 1115px;
+	margin: 0 auto;
+	@media (max-width: 1250px) {
+		width: 90%;
+	}
+}
+
+.universal-h2 {
+	font-size: 48px;
+	text-align: center;
+	color: $brand-black;
+	@media (max-width: 1250px) {
+		font-size: 38px;
+	}
+	@media (max-width: 668px) {
+		font-size: 30px;
+	}
+}
+
+.universal-h2-bckg {
+	background-image: url('../images/double-line.svg');
+	background-repeat: no-repeat;
+	background-position: center bottom; 
+}
+/* Universal style end */
+
+/* Includes */
+@import 'components/header';
+@import 'components/top-banner';
+@import 'components/about-us';
+@import 'components/books';
+@import 'components/counter';
+@import 'components/blog';
+@import 'components/quotes';
+@import 'components/social';
+@import 'components/footer';
+@import 'components/blog-page';

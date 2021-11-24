@@ -1,0 +1,66 @@
+.fh5co-quotes {
+	position: relative;
+	padding: 135px 0 172px;
+	text-align: center;
+	background-image: url('../images/quotes-bckg.jpg');
+	background-position: center;
+	background-size: cover;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.9;
+	}
+	.site-container {
+		position: relative;
+		z-index: 1;
+	}
+	.universal-h2 {
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+		color: $brand-white !important;
+	}
+	p {
+		width: 43%;
+		margin: 0 auto 45px;
+		color: $brand-white;
+		line-height: 24px;
+		@media (max-width: 620px) {
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
+	img {
+		margin: 0 auto 5px;
+	}
+	h4 {
+		margin-bottom: 5px;
+		font-size: 25px;
+		color: $brand-primary;
+	}
+	.slick-arrow {
+		bottom: -8%;
+	}
+	.slick-prev {
+		left: 45.5%;
+		@media (max-width: 1150px) {
+			left: 34%;
+		}
+	}
+	.slick-next {
+		right: 45.5%;
+		@media (max-width: 1150px) {
+			right: 34%;
+		}
+	}
+	@media (max-width: 1150px) {
+		padding: 75px 0 95px;
+		p {
+			width: 90%;
+		}
+	}
+}
